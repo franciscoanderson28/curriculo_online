@@ -1,0 +1,172 @@
+/* classes que serão usadas para da estilo no html */
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    
+}
+header{
+    background-color: #271c01;
+    color: white;
+    padding: 50px
+
+}
+ul{
+    list-style-type: none;
+    
+    
+    
+  
+}
+li{
+    float: left;
+    
+   
+    
+    
+}
+li a {
+    display: block;
+    color: #f47d31;
+    padding:10px 15px;
+    text-decoration: underline;
+    font-size: larger;
+    
+   
+    
+}
+li a:hover{
+    background-color: #271c00;
+    color: white;
+}
+.imagem{
+    max-width: 100%;         
+    height: 800px;
+    width: 100%;
+}
+
+
+
+.texto{
+    grid-column-start: 5;
+    grid-column-end: 12;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    font-size: large;
+}
+.imagemperfil{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}  
+.fundo{
+    background-color: #271c00;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    
+}  
+.fundoformacao1{
+    background-color: #f47d31;
+    color: white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: x-large;
+    border-radius: 15px;
+    
+}  
+.menu{
+    grid-column-start: 1;
+    grid-column-end: 12;
+    justify-content: center;
+    text-align: center;
+   
+}
+.servicos{
+    background-color: #271c00;
+    border-radius: 25px;
+    width: 200px;
+    height: 100px;
+
+    color: white;
+    padding: 0;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    
+}
+footer{
+    background: url(img/digital.jpg) no-repeat center;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    padding: 30px;
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+.container.menu ul {
+    padding: 0;
+}
+
+.container.menu li {
+    float: left;
+    margin-right: 80px; /* Adiciona espaçamento lateral entre os links */
+}
+
+.container.menu li:last-child {
+     margin-right: 0; /* Remove a margem direita do último item do menu */
+}
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .fundo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .fundoformacao1 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+            .imagem {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+            .imagemperfil {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+            .menu {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+            .servicos {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+            .texto {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+            .container.menu {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+
+        }
